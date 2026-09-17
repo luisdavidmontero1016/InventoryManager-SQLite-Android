@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4CAF50"
+            android:padding="24dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛒"
+                android:textSize="42sp"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="REGISTRAR NUEVO PRODUCTO"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completa los campos para añadirlo al inventario"
+                android:textSize="13sp"
+                android:textColor="#E8F5E9"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Contenedor del formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Producto *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/editNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el nombre"
+                android:inputType="textCapWords"
+                android:background="#F8F9FA"
+                android:padding="12dp"
+                android:textColor="#2C3E50"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Descripción -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"/>
+
+            <EditText
+                android:id="@+id/editDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Ingrese la descripción del producto"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:background="#F8F9FA"
+                android:padding="12dp"
+                android:textColor="#2C3E50"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Precio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio Unitario *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"/>
+
+            <EditText
+                android:id="@+id/editPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:background="#F8F9FA"
+                android:padding="12dp"
+                android:textColor="#2C3E50"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Stock -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad en Stock *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"/>
+
+            <EditText
+                android:id="@+id/editStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:background="#F8F9FA"
+                android:padding="12dp"
+                android:textColor="#2C3E50"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Botón principal -->
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="#2196F3"
+                android:backgroundTint="#8BC34A"
+                android:elevation="6dp"
+                android:padding="16dp"
+                android:text="✅ Registrar Producto"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Nota -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Campos obligatorios"
+                android:textSize="12sp"
+                android:textColor="#7F8C8D"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
