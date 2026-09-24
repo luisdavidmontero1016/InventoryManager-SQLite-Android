@@ -13,7 +13,7 @@
 ---
 
 ## • Tecnologías y Herramientas
-* **Lenguaje:** Java[cite: 8]
-* **Entorno de desarrollo:** Android Studio[cite: 8]
-* **Base de datos:** SQLite[cite: 8]
+* **Lenguaje:** Java
+* **Entorno de desarrollo:** Android Studio
+* **Base de datos:** SQLite
 * **Control de versiones:** Git / GitHub
